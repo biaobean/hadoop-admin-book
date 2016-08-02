@@ -13,5 +13,16 @@
 
 
 
-##HBase
+## HBase
 200个reagion一个服务器
+
+## Kudu
+
+保证Bucket的数目足够多，大于CPU的核数，从而得到更好的并发。
+给Tablets尽量多的内存，从而减少flushing，降低插入压力；同时能让更多的数据保持在cache里，现在策略是LRU()
+
+## Oozie
+尽量减少步骤数目，将其合并在一个shell script里。
+
+其他
+使用cgroup来隔离IO，
