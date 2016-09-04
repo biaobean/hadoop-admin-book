@@ -3,7 +3,7 @@
 ## 重启准备阶段
 
 1.	备份当前HDFS元数据，包括namedir下的FSImage以及JournalNode的EditsLog；
-2.	记录先有文件数目以及block数目，包括pending deletion,miss以及under-replicated的数目和信息
+2.	记录先有文件数目以及block数目，包括pending deletion，miss以及under-replicated的数目和信息
 
 ## 启动阶段
 
@@ -27,7 +27,7 @@ iptables -A INPUT -p tcp --dport 8020 -m connlimit --connlimit-above 20 --connli
 
 1. 按20个DataNode节点一批，启动服务或者运行下面的命令：
 ``` shell
-hdfs dfsadmin -triggerBlockReport <datanode_host:ipc_port>
+hdfs dfsadmin -triggerBlockReport datanode_host:ipc_port
 ```
 其中，ipc_port的缺省值为50020
 2. 操作完成后，等待NameNode退出SafeMode。
