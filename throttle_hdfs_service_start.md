@@ -16,12 +16,13 @@
     <value>1f</value>
 </property>
 ```
-3. 使用iptables限制网络端口8020最大连接数为20：
+3. 启动iptables服务；
+4. 使用iptables限制网络端口8020最大连接数为20：
 ``` shell
 iptables -A INPUT -p tcp --dport 8020 -m connlimit --connlimit-above 20 --connlimit-mask 0 -j REJECT
 ```
 其中8020为ipc端口
-4. 启动NN服务，确保进入safemode
+5. 启动NN服务，确保进入safemode
 
 ### 启动DataNode
 
@@ -45,4 +46,5 @@ hdfs dfsadmin -safemode enter
 ``` shell
 hdfs dfsadmin -safemode leave
 ```
-3. 删除不必要的文件或日志，并对外提供服务。
+3. 删除不必要的文件或日志；
+4. 禁止iptables服务，并对外提供服务。
