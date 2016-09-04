@@ -5,4 +5,5 @@
 * [FAQ](faq.md)
 * [性能调优](perf_tune.md)
 * 故障排除
+   * 有节制地启动HDFS服务
 
