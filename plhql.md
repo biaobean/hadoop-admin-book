@@ -68,7 +68,7 @@ CALL set_message('world', str);
 PRINT str;
 ```
 
-## 在CDH中安装
+## 在CDH中的安装
 在通过parcel包方式安装的CDH环境中，按以下步骤安装Hplsql：
 
 【第一步】下载jar包解压，编辑hplsql文件为可执行
