@@ -1,6 +1,10 @@
-# 有节制地启动HDFS服务
+# 如何解决启动大规模HDFS服务时的上线风暴？
 
-## 重启准备阶段
+在大规模集群启动HDFS服务时，由于同时上线的服务器太多，会造成NameNode的压力太大。一旦NameNode压力过大将导致DataNode连接NameNode失败，从而系统以为该DataNode下线，造成大量Data Block的重分布计算，又进一步恶化了NameNode压力，从而导致NameNode无法完成启动，整个HDFS服务无法上线。
+
+解决的方法是限制同时上线的DataNode的数量，分批次将DataNode上线。
+
+## 准备阶段
 
 1.	备份当前HDFS元数据，包括namedir下的FSImage以及JournalNode的EditsLog；
 2.	记录先有文件数目以及block数目，包括pending deletion，miss以及under-replicated的数目和信息
