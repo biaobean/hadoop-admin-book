@@ -69,7 +69,7 @@ PRINT str;
 ```
 
 ## 在CDH中的安装
-在通过parcel包方式安装的CDH环境中，按以下步骤安装Hplsql：
+在通过parcel包方式安装的CDH环境中，按以下步骤安装HPL/SQL：
 
 【第一步】下载jar包解压，编辑hplsql文件为可执行
 
