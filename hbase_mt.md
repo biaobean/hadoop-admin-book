@@ -1,4 +1,4 @@
-# HBase
+# HBase多租户
 
 比如：有两个用户使用HBase， User1和User2。起初都没有做限制，后来管理员决定User1的任务更加重要，因此为User2做了访问流量限制，使其减少对User1请求的资源争夺。下图为流控的效果：
 ![](images/hbase_mt/1.png)
