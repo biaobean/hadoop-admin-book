@@ -1,6 +1,6 @@
 # 如何在Hadoop上支持PL/SQL
 
-介绍一个基于Apache协议开源的工具——[HPL/SQL](http://www.hplsql.org/)，为Hive、SparkSQL等SQL-on-Hadoop产品、NoSQL和RDBMS提供了过程式SQL语言支持。
+介绍一个基于Apache协议开源的工具——[HPL/SQL](http://www.hplsql.org/)，已经在Hive 2.0中被引入，为Hive、SparkSQL等SQL-on-Hadoop产品、NoSQL和RDBMS提供了过程式SQL语言支持。
 
 HPL/SQL语言兼容80%以上的Oracle PL/SQL语法，并很大程度上与ANSI/ISO SQL/PSM（如IBM DB2，MySQL和Teradata等），Teradata的BTEQ，PostgreSQL的PL/ pgSQL（来自Netezza公司），Transact-SQL（来自微软的SQL Server和Sybase）。这不仅使用户能充分利用现有的SQL/DWH技能和熟悉的方式来实现Hadoop的数据仓库解决方案，也有利于现有业务逻辑的Hadoop迁移。
 
