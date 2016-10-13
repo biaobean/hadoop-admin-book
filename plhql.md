@@ -67,3 +67,51 @@ DECLEAR str STRING;
 CALL set_message('world', str);
 PRINT str;
 ```
+
+## 在CDH中安装
+在通过parcel包方式安装的CDH环境中，按以下步骤安装Hplsql：
+
+【第一步】下载jar包解压，编辑hplsql文件为可执行
+
+【第二步】 配置CLASSPATH
+
+打开hplsql文件，删除所有类似以下的export
+```
+export "HADOOP_CLASSPATH=..."
+```
+
+加入以下行:
+
+```
+#my add for support CDH.
+hadoopHome='/opt/cloudera/parcels/CDH/lib'
+export  "HADOOP_CLASSPATH=$HADOOP_CLASSPATH:$hadoopHome/hadoop/*"
+export  "HADOOP_CLASSPATH=$HADOOP_CLASSPATH:$hadoopHome/hadoop/lib/*"
+export  "HADOOP_CLASSPATH=$HADOOP_CLASSPATH:/etc/hadoop/conf"
+export  "HADOOP_CLASSPATH=$HADOOP_CLASSPATH:$hadoopHome/hadoop-mapreduce/*"
+export  "HADOOP_CLASSPATH=$HADOOP_CLASSPATH:$hadoopHome/hadoop-mapreduce/lib/*"
+export  "HADOOP_CLASSPATH=$HADOOP_CLASSPATH:$hadoopHome/hadoop-hdfs/*"
+export  "HADOOP_CLASSPATH=$HADOOP_CLASSPATH:$hadoopHome/hadoop-hdfs/lib/*"
+export  "HADOOP_CLASSPATH=$HADOOP_CLASSPATH:$hadoopHome/hadoop-yarn/*"
+export  "HADOOP_CLASSPATH=$HADOOP_CLASSPATH:$hadoopHome/hadoop-yarn/lib/*"
+export  "HADOOP_CLASSPATH=$HADOOP_CLASSPATH:$hadoopHome/hive/lib/*"
+export  "HADOOP_CLASSPATH=$HADOOP_CLASSPATH:$hadoopHome/hive/conf"
+```
+
+【第三步】添加环境变量，加入hplsql执行文件路径
+
+```
+export PATH=$PATH:(项目路径)
+```
+
+【第四步】启动服务
+
+```
+hiveserver2
+```
+
+【第五步】测试是否安装成功
+
+```
+hplsql -e "CURRENT_DATE+1"
+```
