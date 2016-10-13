@@ -7,5 +7,5 @@
 * 故障排除
    * [有节制地启动HDFS服务](throttle_hdfs_service_start.md)
 * 架构开发
-   * 如何在Hadoop上支持PL/SQL
+   * [如何在Hadoop上支持PL/SQL](plhql.md)
 
