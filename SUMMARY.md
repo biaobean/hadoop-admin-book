@@ -6,6 +6,7 @@
    * [如何在Hadoop上支持PL/SQL](plhql.md)
    * 多租户相关
        * [HBase多租户](hbase_mt.md)
+   * 将HDFS挂载为NFS文件系统
 * [性能调优](perf_tune.md)
 * 故障排除
    * [有节制地启动HDFS服务](throttle_hdfs_service_start.md)
