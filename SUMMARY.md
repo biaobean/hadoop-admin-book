@@ -7,7 +7,7 @@
    * 多租户相关
        * [HBase多租户](hbase_mt.md)
    * [将HDFS挂载为NFS文件系统](mount_hdfs_as_nfs.md)
-   * SQL on Hadoop
+   * [SQL on Hadoop](sql_on_hadoop.md)
 * [性能调优](perf_tune.md)
    * Impalat调优
 * 故障排除
