@@ -1,6 +1,9 @@
 # SQL on Hadoop
 
 
+
+https://community.hortonworks.com/articles/14958/olap-in-hadoop-introduction-part-1.html
+
 ## 性能比较
 | 日期 | 来源 | 主要结论 | 链接 |
 | -- | -- | -- | -- |
