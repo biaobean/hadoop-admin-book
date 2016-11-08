@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [First Chapter](impala.md)
+* [Impala](impala.md)
 * 架构开发
    * [如何在Hadoop上支持PL/SQL](plhql.md)
    * 多租户相关
