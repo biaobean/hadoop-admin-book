@@ -10,7 +10,7 @@
   * [将HDFS挂载为NFS文件系统](mount_hdfs_as_nfs.md)
   * [SQL on Hadoop](sql_on_hadoop.md)
 * [性能调优](perf_tune.md)
-  * Impalat调优
+  * [查看YARN任务日志](perf_tune/yarn_app_log.md)
 * 故障排除
   * [有节制地启动HDFS服务](throttle_hdfs_service_start.md)
 * [FAQ](faq.md)
