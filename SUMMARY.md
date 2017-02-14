@@ -1,7 +1,8 @@
 # Summary
 
 * [Introduction](README.md)
-* [Impala](impala.md)
+* [安装部署](deploy.md)
+  * [Window客户端](windows_client.md)
 * 架构开发
   * [如何在Hadoop上支持PL/SQL](plhql.md)
   * 多租户相关
