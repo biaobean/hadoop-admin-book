@@ -13,8 +13,9 @@
   * [SQL on Hadoop](sql_on_hadoop.md)
 * [性能调优](perf_tune.md)
   * [查看YARN任务日志](perf_tune/yarn_app_log.md)
-* 故障排除
+* [故障排除](.md)
   * [有节制地启动HDFS服务](throttle_hdfs_service_start.md)
+  * [HUE](hue.md)
 * [FAQ](faq.md)
 * [Hadoop实施手册](hadoop.md)
 
