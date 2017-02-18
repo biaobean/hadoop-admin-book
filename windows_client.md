@@ -14,9 +14,13 @@
 
 [https://www.cloudera.com/documentation/enterprise/5-2-x/topics/cdh\\_sg\\_hadoop\\_security\\_active\\_directory\\_integrate.html](https://www.cloudera.com/documentation/enterprise/5-2-x/topics/cdh\_sg\_hadoop\_security\_active\_directory\_integrate.html)
 
-http://windowsitpro.com/security/kerberos-active-directory
+[http://windowsitpro.com/security/kerberos-active-directory](http://windowsitpro.com/security/kerberos-active-directory)
 
-https://docs.bmc.com/docs/display/public/sso90/End-to-end+steps+for+configuring+Active+Directory+Kerberos+authentication
+[https://docs.bmc.com/docs/display/public/sso90/End-to-end+steps+for+configuring+Active+Directory+Kerberos+authentication](https://docs.bmc.com/docs/display/public/sso90/End-to-end+steps+for+configuring+Active+Directory+Kerberos+authentication)
+
+https://www.centos.org/docs/5/html/5.2/Deployment\_Guide/s1-kerberos-clients.html
+
+
 
 ## 配置Windows ODBC客户端
 
